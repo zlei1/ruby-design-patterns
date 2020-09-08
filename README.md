@@ -1,1 +1,1 @@
-[ruby design patterns](https://refactoringguru.cn/design-patterns/ruby)
+# ruby design patterns
