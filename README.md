@@ -1,1 +1,1 @@
-# ruby design patterns
+# ruby design pattern notes
