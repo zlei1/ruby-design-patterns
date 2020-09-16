@@ -112,6 +112,10 @@ class Caretaker
   end
 end
 
+# 原发器（Originator）：负责创建一个备忘录，用以记录当前对象的内部状态。
+# 备忘录（Memento）：用于存储Originator的内部状态。
+# 负责人（Caretaker）：负责保存好备忘录。
+
 originator = Originator.new('Super-duper-super-puper-super.')
 caretaker = Caretaker.new(originator)
 
