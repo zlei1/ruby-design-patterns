@@ -1,50 +1,52 @@
-class DoWork
-  def self.method1
-    puts "员工：打卡考勤"
+# 形状
+class Shape
+  def draw
+    raise "yous should override this method in subclass"
   end
 end
 
-class Inspection
-  def self.method1
-    puts "领导视察：端茶倒水"
+# 长方形
+class Rectangle < Shape
+  def draw
+    puts "画了一个长方形"
   end
 end
 
-class Post
-  def self.method1
-    puts "邮递员：登记收发物品"
+# 正方形
+class Square < Shape
+  def draw
+    puts "画了一个正方形"
   end
 end
 
-class Visit
-  def self.method1
-    puts "访客：登记身份证"
+# 圆形
+class Circle < Shape
+  def draw
+    puts "画了一个圆形"
   end
 end
 
-class Facede
-  def operate(action)
-    case action.downcase
-    when 'dowork'
-      DoWork.method1
-    when 'inspection'
-      Inspection.method1
-    when 'post'
-      Post.method1
-    when 'visit'
-      Visit.method1
-    else
-      puts "没有对应事项，不能工作"
-    end
+class ShapeMaker
+  def initialize()
+    @rectangle = Rectangle.new
+    @square = Square.new
+    @circle = Circle.new
+  end
+
+  def draw_rectangle
+    @rectangle.draw
+  end
+
+  def draw_square
+    @square.draw
+  end
+
+  def draw_circle
+    @circle.draw
   end
 end
 
-facede = Facede.new
-# 员工上班
-facede.operate('dowork')
-# 领导过来视察
-facede.operate('inspection')
-# 向前台提交邮品
-facede.operate('post')
-# 向前台要求访客
-facede.operate('visit')
+shape_maker = ShapeMaker.new
+shape_maker.draw_rectangle
+shape_maker.draw_square
+shape_maker.draw_circle
