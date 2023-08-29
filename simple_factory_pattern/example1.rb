@@ -55,3 +55,5 @@ end
 
 o = OperationFactory.create_operate('+')
 o.a = 1
+o.b = 1
+o.result
