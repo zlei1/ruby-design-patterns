@@ -15,7 +15,7 @@
 * [适配器模式（Adapter）](https://github.com/zlei1/ruby-design-patterns/tree/master/adapter_pattern)
 * [代理模式（Proxy）](https://github.com/zlei1/ruby-design-patterns/tree/master/proxy_pattern)
 * [组合模式（Composite）](https://github.com/zlei1/ruby-design-patterns/tree/master/composite_pattern)
-* [享元模式（Flyweight）](https://github.com/zlei1/ruby-design-patterns/tree/maste/flyweight_pattern)
+* [享元模式（Flyweight）](https://github.com/zlei1/ruby-design-patterns/tree/master/flyweight_pattern)
 * [装饰模式（Decorator）](https://github.com/zlei1/ruby-design-patterns/tree/master/decorator_pattern)
 * [桥模式（Bridge）](https://github.com/zlei1/ruby-design-patterns/tree/master/bridge_pattern)
 
