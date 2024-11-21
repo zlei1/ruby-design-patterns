@@ -14,6 +14,8 @@ module MyDecorator
         end
       end
     end
+
+    super
   end
 
   def wrap(decorator)
